@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>My weather</title>
+</head>
+<body>
+    <div class="app-container">
+        <div class="container ">
+            <input type="text" placeholder="Find your location ..." class="w-100 rounded-5 bg-main-color text-white p-3 my-4 mx-auto" id="search">
+
+            <div class="row">
+                <div class="col-md-4 bg-sec-color rounded-4 ">
+
+                    <div class="card-head d-flex text-light justify-content-between p-3">
+                        <p id="today-name" class="">tusday</p>
+                        <div>
+                            <span id="today-num">3</span>
+                            <span id="today-moth">May</span>
+                        </div>
+                    </div>
+                    <div class="card-content text-light" >
+
+                         <p id="city" class="fs-4">cairo</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="fs-1 fw-bolder">
+                                <span id="today-temp">20</span>
+                                <span><sup>o</sup> C</span>
+                            </div>
+                            <img id="icon-temp" src="images/116.png" alt="">
+                        </div>
+                        <p class="text-light-blue fs-6" id="weather">sunny</p>
+
+                    </div>
+
+                    <div class="card-footer text-light d-flex p-3">
+                        <div class="d-flex  me-3">
+                            <img src="images/icon-umberella.png" class="footer-icons me-2 " alt="" />
+                            <p id="humidity">20</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="images/icon-wind.png" class="footer-icons mx-2" alt="" />
+                            <p id="wind">30 km/h</p>
+                        </div>
+                        <div class="d-flex me-3">
+                            <img src="images/icon-compass.png" class="footer-icons mx-2" alt="" />
+                            <p id="wind_direction">NNE</p>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <!-- second day -->
+                <div class="col-md-4 bg-main-color">
+                    <div class="py-2 text-center bg-sec-color text-light" >
+                        <p class="next_day_name my-auto">Friday</p>
+                    </div>
+                    <div class="card-content text-start text-light p-3 text-center pt-5">
+                        <img class="next_img" src="images/113.png" alt="">
+                        <h3>
+                            <span class="next_max_temp"></span>
+                            <span><sup>o</sup> C</span>
+                        </h3>
+                        <h5 class="text-muted">
+                            <span class="next_min_temp">15</span>
+                            <span><sup>o</sup> C</span>
+                        </h5>
+                        <p class="weather_text fs-6 text-light-blue">partly cloudy</p>
+                    </div>
+                </div>
+                <!-- therd day -->
+                <div class="col-md-4 bg-sec-color" >
+                        <div class="py-2 text-center px-3 bg-main-color text-light rounded-end">
+                            <p class="next_day_name my-auto">Friday</p>
+                        </div>
+                        <div class="item-content text-start text-light p-3 text-center pt-5">
+                            <img class="next_img" src="images/113.png" alt="">
+                            <h3>
+                                <span class="next_max_temp"></span>
+                                <span><sup>o</sup> C</span>
+                            </h3>
+                            <h5 class="text-muted">
+                                <span class="next_min_temp">15</span>
+                                <span><sup>o</sup> C</span>
+                            </h5>
+                            <p class="weather_text fs-6 text-light-blue">partly cloudy</p>
+                        </div>
+                </div>
+            
+
+            </div>
+
+        </div>
+
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
